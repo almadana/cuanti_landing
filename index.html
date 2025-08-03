@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuanti - Facultad de Psicología - UdelaR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: #4b00f9;
+            min-height: 100vh;
+            color: white;
+        }
+
+        .banner {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #fff, #f0f0f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .banner p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .button-card {
+            background: #4b00fa;
+            border-radius: 20px;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+        }
+
+        .button-card:hover {
+            transform: translateY(-5px);
+            background: #3a00d1;
+            box-shadow: 0 10px 25px rgba(75, 0, 250, 0.4);
+        }
+
+        .button-image {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .button-content {
+            text-align: left;
+            flex: 1;
+        }
+
+        .button-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0;
+            color: #fff;
+        }
+
+        .button-description {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            line-height: 1.4;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2rem;
+            }
+            
+            .buttons-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1>Métodos y Técnicas Cuantitativas</h1>
+        <p>Facultad de Psicología - Universidad de la República</p>
+    </div>
+
+    <div class="container">
+        <div class="buttons-grid">
+            <a href="https://cuanti.psico.edu.uy/libro" class="button-card" target="_blank">
+                <div class="button-image">
+                    <img src="img/book.png" alt="Libro" width="50" height="50">
+                </div>
+                <div class="button-content">
+                    <h3 class="button-title">Libro</h3>
+                    <p class="button-description">Accede al libro de texto completo con todos los contenidos teóricos del curso, animaciones y más..</p>
+                </div>
+            </a>
+
+            <a href="https://cuanti.psico.edu.uy/lecciones" class="button-card" target="_blank">
+                <div class="button-image">
+                    <img src="img/lecciones.png" alt="Lecciones" width="50" height="50">
+                </div>
+                <div class="button-content">
+                    <h3 class="button-title">Lecciones</h3>
+                    <p class="button-description">Animaciones y elementos interativos para explorar los contenidos del curso.</p>
+                </div>
+            </a>
+
+            <a href="https://cuanti.psico.edu.uy/panel" class="button-card" target="_blank">
+                <div class="button-image">
+                    <img src="img/mouse.png" alt="Panel" width="50" height="50">
+                </div>
+                <div class="button-content">
+                    <h3 class="button-title">Panel</h3>
+                    <p class="button-description">Panel interactivo con visualizaciones de datos y análisis estadístico en datos reales.</p>
+                </div>
+            </a>
+
+            <a href="https://cuanti.psico.edu.uy/practicos" class="button-card" target="_blank">
+                <div class="button-image">
+                    <img src="img/INFO.png" alt="Prácticos" width="50" height="50">
+                </div>
+                <div class="button-content">
+                    <h3 class="button-title">Prácticos</h3>
+                    <p class="button-description">Ejercicios prácticos y pautas de trabajo en los Seminarios del curso.</p>
+                </div>
+            </a>
+
+            <a href="https://eva-cursos.psico.edu.uy" class="button-card" target="_blank">
+                <div class="button-image">
+                    <img src="img/novedades.png" alt="EVA" width="50" height="50">
+                </div>
+                <div class="button-content">
+                    <h3 class="button-title">EVA</h3>
+                    <p class="button-description">Accede al Entorno Virtual de Aprendizaje para materiales adicionales e información del curso.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html> 
